@@ -1,18 +1,26 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
- * main - print if the number is positive, zero, or negative
+ * main - print single digit numbers
  *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative"
- * Retrun: 0
+ * Desciption: print single digit numbers
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int n;
-for (n = 48; n < 58; n++)
-putchar(n);
-putchar('\n');
-return (0);
+	int i;
+
+	i = 48;
+
+	while (i < 58)
+	{
+		putchar(i);
+		i++;
+	}
+
+	putchar(10);
+
+	return (0);
 }
