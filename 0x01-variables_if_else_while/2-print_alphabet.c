@@ -1,18 +1,24 @@
-include <stdio.h>
+#include <stdio.h>
+
+#include <ctype.h>
 /**
- * main - print if the number is postive, zero, or negative
- *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative
- * Return: 0
+ * main - main block
+ * Description: Get a random number and print the number
+ * positive,negative or zero
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
+int alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-	putchar(ch);
+int alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+alphabet = tolower(alphabet);
+putchar(alphabet);
 }
 putchar('\n');
 return (0);
+}
 }
